@@ -7,18 +7,25 @@ const NavStyled = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #333;
+  color: #fff;
+  margin: -15px 0 -15px -15px;
 
   ul {
     list-style: none;
     flex: 1;
-    padding: 0;
+    padding: 30px;
     margin: 0;
+    li {
+      margin-top: 10px;
+    }
   }
 
   div {
-    .nav-footer {
+    &.nav-footer {
       display: flex;
       align-items: flex-end;
+      padding: 30px;
     }
   }
 `;
@@ -29,22 +36,17 @@ function Navigation() {
         <ul className="nav">
           <li>
             <Link href="/" passHref>
-              <a>Home</a>
+              <a title="Home page">Home</a>
             </Link>
           </li>
           <li>
             <Link href="/about" passHref>
-              <a>About</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/resume" passHref>
-              <a>Resume</a>
+              <a title="About page">About</a>
             </Link>
           </li>
           <li>
             <Link href="brewtus" passHref>
-              <a>Brewtus</a>
+              <a title="Brewery app page">Brewtus</a>
             </Link>
           </li>
         </ul>

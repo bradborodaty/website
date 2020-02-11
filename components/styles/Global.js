@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    padding: 15px;
+    margin: 15px;
   }
 
   a {

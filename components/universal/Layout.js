@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
+import { ContentContainer } from '../styles/wrappers/ContentContainer';
+
 const Wrapper = styled.div`
   display: flex;
 `;
@@ -20,7 +22,9 @@ function Layout({ children }) {
         </Head>
         <Wrapper>
           <Navigation />
-          {children}
+          <ContentContainer>
+            {children}
+          </ContentContainer>
           {/* <Footer /> */}
         </Wrapper>
       </>
