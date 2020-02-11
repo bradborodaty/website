@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 
+import { github } from '../../utils/config';
+
 const NavStyled = styled.div`
   width: 25%;
   display: flex;
@@ -40,19 +42,19 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link href="/about" passHref>
-              <a title="About page">About</a>
+            <Link href="/experience" passHref>
+              <a title="Experience page">Experience</a>
             </Link>
           </li>
           <li>
-            <Link href="brewtus" passHref>
+            <Link href="/brewtus" passHref>
               <a title="Brewery app page">Brewtus</a>
             </Link>
           </li>
         </ul>
 
         <div className="nav-footer">
-          <a href="https://github.com/bradborodaty" title="Brad Borodaty's gitub account">
+          <a href={`${github}`} title="Brad Borodaty's github account">
             View my github
           </a>
         </div>

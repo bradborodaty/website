@@ -15,7 +15,7 @@ function Layout({ children }) {
     return (
       <>
         <Head>
-          <title>Brad Borodaty</title>
+          <title>Brad Borodaty - Home</title>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
           <meta charSet="utf-8"/>
