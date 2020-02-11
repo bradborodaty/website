@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import ExperienceBlock from '../components/ExperienceBlock';
 
-import { experience } from '../utils/config';
+import { experience, name } from '../utils/config';
 
 const ExperienceContainer = styled.div`
   width: 100%;
@@ -16,12 +16,32 @@ const ExperienceContainer = styled.div`
   hr {
     margin: 20px 0;
   }
+
+  .experience__block {
+    .headline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h2 {
+        flex: 1;
+      }
+      span {
+        letter-spacing: 0;
+      }
+    }
+    .bullets {
+      ul {
+        padding-left: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
 `;
 
 function Experience() {
   return (
     <ExperienceContainer>
-      <h1>Bradley Borodaty</h1>
+      <h1>{name}</h1>
       <hr/>
       {experience.map(ex =>
         <ExperienceBlock

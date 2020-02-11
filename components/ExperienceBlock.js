@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ExperienceBlock(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="experience__block">
       <div className="headline">

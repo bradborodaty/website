@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "node server.js"
+    "start": "node server.js",
+    "export": "next export"
   },
   "dependencies": {
     "dotenv": "^8.2.0",

@@ -1,4 +1,5 @@
 const config = {
+  name: 'Bradley Borodaty',
   github: 'https://github.com/bradborodaty',
   experience: [
     {

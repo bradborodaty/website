@@ -44,5 +44,23 @@ export const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
   }
+
+  h1 {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    text-transform: none;
+  }
+
 `;
