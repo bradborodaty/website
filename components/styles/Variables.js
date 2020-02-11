@@ -24,5 +24,7 @@ export const screenSizeMax = {
 
 
 export const fonts = {
-  size: '10px',
+  size: '16px',
+  family: "'Muli', sans-serif",
+  weight: '400',
 }

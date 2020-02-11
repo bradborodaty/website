@@ -2,6 +2,7 @@ import React from 'react';
 import App from 'next/app';
 import { ThemeProvider } from 'styled-components';
 
+import Layout from '../components/universal/Layout';
 import { Theme } from '../components/styles/Theme';
 
 class BorodatyWebsite extends App {
@@ -9,7 +10,9 @@ class BorodatyWebsite extends App {
     const { Component, pageProps } = this.props;
     return (
       <ThemeProvider theme={Theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     )
   }
